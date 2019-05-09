@@ -9,7 +9,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{255596C7
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{28DAEAC2-35F8-482F-AF4B-EA27FC23F553}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConverter", "src\DataConverter\DataConverter.csproj", "{0D5179E9-5710-4CC2-8374-361F7BE0BD01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataConverter", "src\DataConverter\DataConverter.csproj", "{0D5179E9-5710-4CC2-8374-361F7BE0BD01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConverter.Test", "DataConverter.Test\DataConverter.Test.csproj", "{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,12 +23,17 @@ Global
 		{0D5179E9-5710-4CC2-8374-361F7BE0BD01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5179E9-5710-4CC2-8374-361F7BE0BD01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5179E9-5710-4CC2-8374-361F7BE0BD01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0D5179E9-5710-4CC2-8374-361F7BE0BD01} = {0196AA83-C65A-451E-B58B-DF97D85A77B4}
+		{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD} = {255596C7-9C40-40BA-A1F3-4F2405CB24B9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A0AD8216-27A3-4912-A29D-34BF0CB9BE67}
