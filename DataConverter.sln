@@ -11,7 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "artifacts", "artifacts", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataConverter", "src\DataConverter\DataConverter.csproj", "{0D5179E9-5710-4CC2-8374-361F7BE0BD01}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataConverter.Test", "DataConverter.Test\DataConverter.Test.csproj", "{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataConverter.Test", "DataConverter.Test\DataConverter.Test.csproj", "{3C105E21-12E4-467A-AC1C-BDD99BD6EAFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DDF6A55A-8E8D-4DDB-827A-2AEFF5E86D75}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
