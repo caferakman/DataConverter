@@ -48,7 +48,7 @@ To use this API, include library to your project. There is an object **MainCityD
 ```csharp
 	var data = MainCityData.FromCsv(csv); // Generate object again from csv or xml
 	
-	obj.Filter(x => x.CityName == "Antalya"); //Apply your filter as you wish with 
+	data.Filter(x => x.CityName == "Antalya"); //Apply your filter as you wish with 
 ```
 
 ## Work with object
@@ -62,4 +62,26 @@ To use this API, include library to your project. There is an object **MainCityD
 ```
 
 ## Getting Result
-To be added...
+You can get result as csv or xml like below:
+```csharp
+	var data = MainCityData.FromCsv(csv); // Generate object again from csv or xml
+	
+	data.Filter(x => x.CityName == "Ankara"); //Apply a filter as you wish
+
+	var resultXml = data.AsXml(); // Generates plaing string result as Xml format
+
+	var resultCsv = data.AsCsv(); // Generates plaing string result as Csv format
+```
+
+You can write those strings to files easily using via `Sytstem.IO`
+
+```csharp
+
+	//...
+
+	var resultXml = data.AsXml(); // Generates plaing string result as Xml format
+	File.WriteAllText("C:\SampleOutput.xml", resultXml);
+
+	var resultCsv = data.AsCsv(); // Generates plaing string result as Csv format
+	File.WriteAllText("C:\SampleOutput.csv", resultCsv);
+```
