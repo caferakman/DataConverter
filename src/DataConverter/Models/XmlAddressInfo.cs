@@ -5,8 +5,9 @@ using System.Xml.Serialization;
 
 namespace DataConverter.Models
 {
+
     [XmlRoot("AddressInfo")]
-    internal class AddressInfo
+    public class XmlAddressInfo
     {
         [XmlElement("City")]
         public List<City> Cities { get; set; }
@@ -26,7 +27,7 @@ namespace DataConverter.Models
         [XmlAttribute("name")]
         public string Name { get; set; }
         [XmlElement("Zip")]
-        public List<ZipCode> ZipCode { get; set; }
+        public List<ZipCode> ZipCodes { get; set; }
     }
     public class ZipCode
     {

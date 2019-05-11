@@ -31,9 +31,9 @@ namespace DataConverter.Helpers
             var serializer = new XmlSerializer(type);
             object result;
 
-            using (TextReader reader = new StringReader(objectData))
+            using (var ms = new MemoryStream(Encoding.UTF8.GetBytes(objectData)))
             {
-                result = serializer.Deserialize(reader);
+                result = serializer.Deserialize(ms);
             }
 
             return result;
