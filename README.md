@@ -22,7 +22,7 @@ After a test was succeed, it produces output file to your computers desktop loca
 
 # Usage of This API
 To use this API, include library to your project. There is an object **MainCityData** which has implementation of abilities from **Abstraction** folder.
-
+You can get **.dll** file from [here](https://github.com/caferakman/DataConverter/releases/latest) and add reference to your project.
 
 ## To Read Data:
 
