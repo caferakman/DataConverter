@@ -67,12 +67,12 @@ namespace DataConverter.Models
 
         public static MainCityData FromXml(string xml)
         {
-            var cities = Helpers.XmlHelpers.XmlDeserializeFromString<XmlAddressInfo>(xml).Cities;
+            var data = Helpers.XmlHelpers.XmlDeserializeFromString<XmlAddressInfo>(xml).Cities;
 
 
-            IEnumerable<CsvAddressInfo> ConvertToCsvFormat(IList<City> data)
+            IEnumerable<CsvAddressInfo> ConvertToCsvFormat(IList<City> cities)
             {
-                foreach (var city in data)
+                foreach (var city in cities)
                     foreach (var district in city.Districts)
                         foreach (var zipcode in district.ZipCodes)
                             yield return new CsvAddressInfo
@@ -86,7 +86,7 @@ namespace DataConverter.Models
 
             return new MainCityData
             {
-                ObjectResult = ConvertToCsvFormat(cities).ToList(),
+                ObjectResult = ConvertToCsvFormat(data).ToList(),
             };
         }
         #endregion
