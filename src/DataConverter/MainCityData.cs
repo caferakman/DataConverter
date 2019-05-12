@@ -8,7 +8,7 @@ using ServiceStack.Text;
 
 namespace DataConverter.Models
 {
-    public class MainCityData : ICsvData, IXmlData, IFilterable, IFileData
+    public class MainCityData : ICsvData, IXmlData, IFilterable
     {
         public IList<CsvAddressInfo> ObjectResult { get; set; }
 
@@ -91,14 +91,5 @@ namespace DataConverter.Models
         }
         #endregion
 
-        public byte[] ToByteArray(string plainText)
-        {
-            return Encoding.ASCII.GetBytes(plainText);
-        }
-
-        public MemoryStream ToStream(string plainText)
-        {
-            return new MemoryStream(ToByteArray(plainText));
-        }
     }
 }
